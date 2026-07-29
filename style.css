@@ -1,0 +1,451 @@
+/* iceland-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Iceland';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/iceland-v22-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+
+*{
+    margin: 0;
+    box-sizing: border-box; 
+    font-family: Iceland;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 16px;
+}
+
+
+.landing-section > img {
+    width: 600px;
+}
+
+.landing-section {
+    height: 100vh;
+    
+    background-image: url(assets/img/landing-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.header {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 40px 120px;
+    
+    position: fixed;
+    top: 0px;
+
+    background-color: rgba(0, 0, 0, 0.5);
+} 
+
+.header > a {
+    display: block;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.header > a > img {
+    display: block;
+}
+
+
+
+.nav-bar {
+    display: flex;
+    gap: 16px;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+}
+
+.nav-bar a {
+    text-decoration: none;
+
+    border-radius: 8px;
+    padding: 8px;
+}
+
+
+/* HOVER EFFECTS */
+
+
+.nav-bar a:hover {
+    background-color: #93B8E8;
+}
+
+.header > a > img:hover {
+    background-color: #93B8E8;
+
+}
+
+
+
+/* -------------- Main Content -------------- */
+
+
+
+.main-content {
+    background-color: rgb(12, 16, 59);
+
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+
+    padding-top: 120px;
+}
+
+.content-section {
+    padding: 0px 120px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.content-section > h2 {
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    width: 100%;
+}
+
+
+/* -------------- Komponenten Tabelle -------------- */
+
+
+.components-table {
+    width: 100%;
+    color: white;
+    border: 4px solid;
+    border-collapse: collapse;
+}
+
+.components-table th {
+    /* font-size: 48px; */
+    border: 4px solid;
+    background-color: rgb(111, 139, 221, 0.2);
+    text-align: left;
+
+    padding: 16px 16px 8px 16px;
+}
+
+.components-table td {
+    /* font-size: 32px; */
+    border-left: 4px solid;
+    border-bottom: 1px solid;
+
+    padding: 8px 16px;
+}
+
+
+
+/* -------------- Das Lerne ich gerade -------------- */
+
+
+
+.learning-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    color: white;
+}
+
+.learning-content > img {
+    width: 500px;
+}
+
+
+
+.learning-content-right {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+.learning-content h3 {
+    font-size: 3rem;
+}
+
+.learning-content p {
+    font-size: 1.5rem;
+}
+
+
+.learning-content-links {
+    display: flex;
+    gap: 48px;
+}
+
+.learning-content-links ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.learning-content-links a {
+    display: flex;
+    font-size: 2rem;
+    color: rgba(147, 184, 232, 1);
+
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+/* HOVER EFFECTS */
+
+.learning-content-links a:hover {
+    background-color: #D8F2FF33;
+}
+
+
+
+/* -------------- Diese Software nutze ich -------------- */
+
+
+
+#parapgraph-color-diese-software-nutze-ich {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+.software-card-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    flex-wrap: wrap;
+}
+
+
+.software-card {
+    color: white;
+    width: 600px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 24px;
+
+    border: 5px solid white;
+    background-color: rgba(111, 139, 221, 0.2);
+}
+
+.software-card > img {
+    width: 120px;
+}
+
+.software-card h3 {
+    font-size: 2.5rem;
+}
+
+.software-card p {
+    font-size: 1.25rem;
+    padding-top: 16px;
+}
+
+
+/* <!-------- ↓ FOOTER ↓ --------> */
+
+
+.footer {
+    color: white;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 60px 120px;
+}
+
+.footer > div {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.copyright-text {
+    width: 150px;
+}
+
+
+/* 🢃 ------------- RESPONSIVE DESIGN ------------- 🢃 */
+
+
+/* 🢃 Tablet & Desktop view start ▶️ (min-width) 768px until 🛑 (max-width) 1280px 📱🖥️ 🢃 */
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+
+    .software-card-wrapper {
+        gap: 28px;
+    }
+
+    .content-section {
+        padding: 0px 48px;
+    }
+
+    .learning-content > img {
+        width: 300px;
+        height: fit-content;
+    }
+
+    .learning-content {
+        align-items: center;
+    }
+
+}
+
+/* --------------------------- */
+
+/* 🢃 Mobile & Tablet view start ▶️ (min-width) 480px until 🛑 (max-width) 767px 📱 🢃 */
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+
+    .landing-section > img {
+        width: 450px;
+    }
+}
+
+/* --------------------------- */
+
+/* 🢃 Mobile view until 🛑 (max-width) 479px 📱 🢃 */
+
+@media screen and (max-width: 479px) {
+
+    .landing-section > img {
+        width: 300px;
+    }
+    
+}
+
+/* --------------------------- */
+
+/* 🢃 Mobile & Tablet view until 🛑 (max-width) 767px 📱 🢃 */
+
+@media screen and (max-width: 767px) {
+
+    html {
+        font-size: 12px;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+
+        gap: 20px;
+
+        padding: 40px;
+    }
+
+    .nav-bar a {
+        padding: 0px;
+    }
+
+    .copyright-text {
+        width: unset;
+    }
+
+    .software-card-wrapper {
+        gap: 28px;
+    }
+
+    .software-card > img {
+        width: 100px;
+    }
+
+    .header {
+       padding: 16px;
+    } 
+
+    .nav-bar ul {
+        width: 100%;
+        justify-content: space-between;
+        list-style-type: none;
+
+        padding: 0px;
+    }
+
+    .nav-bar {
+        width: 100%;
+    }
+
+    .header > a {
+        display: none;
+    }
+
+    .content-section {
+        padding: 0px 16px;
+    }
+
+    .learning-content > img {
+        width: 300px;
+        height: fit-content;
+    }
+
+    .learning-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .learning-content-right {
+        align-items: center;
+    }
+
+    .learning-content-links {
+        align-items: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+}
+
+/* --------------------------- */
+
+/* 🢃 Desktop (LAPTOP) view from start ▶️ (min-width) 1440px 🖥️ 🢃 */ 
+
+@media screen and (min-width: 1440px) {
+
+    .landing-section > img {
+        width: 900px;
+    }
+    
+    .content-section {
+        padding: 0px max(120px, calc(50% - 720px));
+        /* padding: 0px calc(50% - 720px); */
+    }
+
+    .header {
+        padding: 16px max(120px, calc(50% - 720px));
+    }
+
+    .footer {
+        padding: 60px max(120px, calc(50% - 720px));
+    }
+    
+}
