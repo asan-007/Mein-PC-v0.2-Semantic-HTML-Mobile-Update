@@ -289,10 +289,6 @@ a {
     gap: 24px;
 }
 
-.copyright-text {
-    width: 150px;
-}
-
 
 /* 🢃 ------------- RESPONSIVE DESIGN ------------- 🢃 */
 
@@ -363,10 +359,6 @@ a {
 
     .nav-bar a {
         padding: 0px;
-    }
-
-    .copyright-text {
-        width: unset;
     }
 
     .software-card-wrapper {
